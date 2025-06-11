@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prince Tech | Portfolio</title>
+  <link rel="icon" href="https://img.icons8.com/color/96/artificial-intelligence.png" type="image/png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    header {
+      position: relative;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    header video {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+    header .content {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 3.5em;
+      color: #00ff88;
+      text-shadow: 0 0 15px #00ff88;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #dff;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services, .socials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+    .service-box, .social-box {
+      background: #111;
+      border: 1px solid #00ff88;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ff88;
+      transition: transform 0.3s;
+    }
+    .service-box:hover, .social-box:hover {
+      transform: translateY(-5px);
+    }
+    .service-box h3, .social-box h3 {
+      color: #00ff88;
+    }
+    .icon {
+      width: 60px;
+      height: 60px;
+      filter: drop-shadow(0 0 5px #00ff88);
+    }
+    .contact {
+      background: #111;
+      border-top: 2px solid #00ff88;
+      padding: 40px;
+      text-align: center;
+      box-shadow: 0 0 10px #00ff88 inset;
+    }
+    .contact a {
+      color: #00ff88;
+      text-decoration: none;
+    }
+    footer {
+      background: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      border-top: 1px solid #222;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <video autoplay muted loop playsinline>
+      <source src="https://player.vimeo.com/external/352709108.sd.mp4?s=dde67cf4e77f82b7485ef72c4bd1f937ae77c960&profile_id=164" type="video/mp4">
+    </video>
+    <div class="content">
+      <h1>PRINCE TECH</h1>
+      <p> SOLUTION THROUGH TECHNOLOGY</p>
+    </div>
+  </header>
+
+  <section>
+    <h2 style="text-align:center; color:#00ff88;">Our Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <img src="https://img.icons8.com/color/96/000000/source-code.png" class="icon"/>
+        <h3>Website Development</h3>
+        <p>Modern websites for business, blogs, or personal use.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/color/96/000000/chatbot.png" class="icon"/>
+        <h3>Bot Creation</h3>
+        <p>We build smart bots for WhatsApp, Telegram, and more.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/color/96/000000/android-os.png" class="icon"/>
+        <h3>App Development</h3>
+        <p>Business apps for Android and iOS platforms.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/color/96/000000/handshake.png" class="icon"/>
+        <h3>Business Bots</h3>
+        <p>Automated bots for customer service and business tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 style="text-align:center; color:#00ff88;">Connect With Us</h2>
+    <div class="socials">
+      <div class="social-box">
+        <img src="https://img.icons8.com/color/96/youtube-play.png" class="icon"/>
+        <h3>YouTube Channel</h3>
+        <p><a href="https://youtube.com" target="_blank">Visit YouTube</a></p>
+      </div>
+      <div class="social-box">
+        <img src="https://img.icons8.com/material-outlined/96/github.png" class="icon"/>
+        <h3>GitHub</h3>
+        <p><a href="https://github.com/PRINCETECH19/PRINCE-XMD" target="_blank">Visit GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="contact">
+    <h2 style="color:#00ff88;">Contact</h2>
+    <p>📧 Email: <a href="mailto:majidiabduli917@gmail.com">majidiabduli917@gmail.com</a></p>
+    <p>📱 WhatsApp: <a href="https://wa.me/255763834140" target="_blank">+255763834140</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Prince Tech. All rights reserved.
+  </footer>
+
+  <!-- AI Robot Voice Script -->
+  <script>
+    window.onload = function () {
+      const message = "Welcome to Prince Tech. Smart technology solutions are now active.";
+      const utterance = new SpeechSynthesisUtterance(message);
+      utterance.lang = 'en-US';
+      utterance.pitch = 0.7; // robotic tone
+      utterance.rate = 0.92;
+      utterance.volume = 1;
+      speechSynthesis.speak(utterance);
+    };
+  </script>
+
+</body>
+</html>
